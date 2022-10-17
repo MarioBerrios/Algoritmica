@@ -18,9 +18,6 @@ std::vector<double> &numeroOrdenes, std::vector<double> &tiemposReales){
         std::vector< std::vector<double> > matriz = 
             std::vector< std::vector<double> >(i, std::vector<double>(i));
         introducirValoresMatriz(matriz, i, intr_valor_manual);
-
-        std::vector< std::vector<double> > inversa = 
-            std::vector< std::vector<double> >(i, std::vector<double>(i));
 	
         time.start();
         determFact(matriz, i);
