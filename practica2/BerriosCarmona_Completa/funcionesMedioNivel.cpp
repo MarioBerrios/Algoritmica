@@ -8,6 +8,8 @@
 void metodo1(){
     char nombreFichero[100];
     long double errorMax = 0;
+
+    std::cout << std::endl;
     std::cout << "Introduzca el nombre del fichero que contiene la serie" << std::endl;
     std::cin >> nombreFichero;
     std::cout << "Introduzca el error máximo permitido" << std::endl;
@@ -24,6 +26,7 @@ void metodo1(){
     int posicion;
     serie.erroresSegmentacion(ise, errorMax, posicion);
 
+    std::cout << std::endl;
     std::cout << "Número de puntos dominantes: " << serie.contarPuntosDominantes() << std::endl;
     std::cout << "ISE = " << ise << std::endl;
     std::cout << "Error máximo = " << errorMax << std::endl;
@@ -34,11 +37,14 @@ void metodo1(){
     std::cout << "Introduzca el nombre del fichero para guardar la segmentación" << std::endl;
     std::cin >> guardarFichero;
     serie.guardarSegmentacion(guardarFichero);
+    std::cout << std::endl;
 }
 
 void metodo2(){
     char nombreFichero[100];
     long double errorMax = 0;
+
+    std::cout << std::endl;
     std::cout << "Introduzca el nombre del fichero que contiene la serie" << std::endl;
     std::cin >> nombreFichero;
     std::cout << "Introduzca el error máximo permitido" << std::endl;
@@ -55,6 +61,7 @@ void metodo2(){
     int posicion;
     serie.erroresSegmentacion(ise, errorMax, posicion);
 
+    std::cout << std::endl;
     std::cout << "Número de puntos dominantes: " << serie.contarPuntosDominantes() << std::endl;
     std::cout << "ISE = " << ise << std::endl;
     std::cout << "Error máximo = " << errorMax << std::endl;
@@ -65,4 +72,5 @@ void metodo2(){
     std::cout << "Introduzca el nombre del fichero para guardar la segmentación" << std::endl;
     std::cin >> guardarFichero;
     serie.guardarSegmentacion(guardarFichero);
+    std::cout << std::endl;
 }
