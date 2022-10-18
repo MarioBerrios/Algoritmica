@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wall -lrt CMakeFiles/practica3.dir/main.cpp.o CMakeFiles/practica3.dir/funcionesMedioNivel.cpp.o CMakeFiles/practica3.dir/funciones.cpp.o CMakeFiles/practica3.dir/serietemporal.cpp.o CMakeFiles/practica3.dir/recta.cpp.o CMakeFiles/practica3.dir/punto.cpp.o -o practica3 
