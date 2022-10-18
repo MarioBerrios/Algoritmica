@@ -6,7 +6,9 @@
 
     void iniciarDominantesErrores(SerieTemporal &serie, std::vector<long double> &dominantes,
         std::vector<long double> &errores, int error_type);
-    void calcularSegmentaciónISE(SerieTemporal &serie, std::vector<long double> &dominantes,
+    void calcularSegmentacionISE(SerieTemporal &serie, std::vector<long double> &dominantes,
+        std::vector<long double> &errores, int puntos);
+    void calcularSegmentacionEMax(SerieTemporal &serie, std::vector<long double> &dominantes,
         std::vector<long double> &errores, int puntos);
     void adjudicarDominantes(SerieTemporal &serie, std::vector<long double> &dominantes);
 

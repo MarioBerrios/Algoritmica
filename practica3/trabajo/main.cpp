@@ -15,7 +15,7 @@ int main(){
         if (opcion == 1){
             metodoISE();
         } else if (opcion == 2){
-            //metodoEMax();
+            metodoEMax();
         }
     }
 
