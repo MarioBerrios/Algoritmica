@@ -32,13 +32,11 @@ std::vector<long double> &errores, int puntos){
         dominantes.erase(dominantes.begin() + pos_minimo_errores);
         errores.erase(errores.begin() + pos_minimo_errores);
 
-        if (dominantes[pos_minimo_errores - 1] != 0 
-        && errores[pos_minimo_errores - 1] != std::numeric_limits<float>::infinity())
+        if (pos_minimo_errores - 1 != 0)
             errores[pos_minimo_errores - 1] = serie.calcularIseEntreDosPuntos(
                 dominantes[pos_minimo_errores - 2], dominantes[pos_minimo_errores]);
         
-        if (dominantes[pos_minimo_errores] != serie.numeroPuntosSerieTemporal() - 1
-        && errores[pos_minimo_errores] != std::numeric_limits<float>::infinity()) 
+        if (dominantes[pos_minimo_errores] != serie.numeroPuntosSerieTemporal() - 1) 
             errores[pos_minimo_errores] = serie.calcularIseEntreDosPuntos(
                 dominantes[pos_minimo_errores - 1], dominantes[pos_minimo_errores + 1]);
     }
