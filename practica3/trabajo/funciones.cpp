@@ -10,7 +10,7 @@ void iniciarDominantesErrores(SerieTemporal &serie, std::vector<long double> &do
 std::vector<long double> &errores, int error_type){
     int aux;
 
-    errores.push_back(std::numeric_limits<float>::infinity());
+    errores.push_back(std::numeric_limits<long double>::infinity());
     dominantes.push_back(0);
 
     for (int i = 1; i < serie.numeroPuntosSerieTemporal() - 1; i++){
@@ -21,7 +21,7 @@ std::vector<long double> &errores, int error_type){
             errores.push_back(serie.calcularIseEntreDosPuntos(i-1, i+1));
     }
 
-    errores.push_back(std::numeric_limits<float>::infinity());
+    errores.push_back(std::numeric_limits<long double>::infinity());
     dominantes.push_back(serie.numeroPuntosSerieTemporal() - 1);
 }
 
@@ -52,13 +52,11 @@ std::vector<long double> &errores, int puntos){
         dominantes.erase(dominantes.begin() + pos_minimo_errores);
         errores.erase(errores.begin() + pos_minimo_errores);
 
-        if (dominantes[pos_minimo_errores - 1] != 0 
-        && errores[pos_minimo_errores - 1] != std::numeric_limits<float>::infinity())
+        if (pos_minimo_errores - 1 != 0)
             errores[pos_minimo_errores - 1] = serie.calcularEmaxEntreDosPuntos(
                 dominantes[pos_minimo_errores - 2], dominantes[pos_minimo_errores], aux);
         
-        if (dominantes[pos_minimo_errores] != serie.numeroPuntosSerieTemporal() - 1
-        && errores[pos_minimo_errores] != std::numeric_limits<float>::infinity()) 
+        if (dominantes[pos_minimo_errores] != serie.numeroPuntosSerieTemporal() - 1) 
             errores[pos_minimo_errores] = serie.calcularEmaxEntreDosPuntos(
                 dominantes[pos_minimo_errores - 1], dominantes[pos_minimo_errores + 1], aux);
     }
