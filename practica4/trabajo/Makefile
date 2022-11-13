@@ -129,6 +129,30 @@ practica4/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/practica4.dir/build.make CMakeFiles/practica4.dir/build
 .PHONY : practica4/fast
 
+funcionesAestrella.o: funcionesAestrella.cpp.o
+.PHONY : funcionesAestrella.o
+
+# target to build an object file
+funcionesAestrella.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practica4.dir/build.make CMakeFiles/practica4.dir/funcionesAestrella.cpp.o
+.PHONY : funcionesAestrella.cpp.o
+
+funcionesAestrella.i: funcionesAestrella.cpp.i
+.PHONY : funcionesAestrella.i
+
+# target to preprocess a source file
+funcionesAestrella.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practica4.dir/build.make CMakeFiles/practica4.dir/funcionesAestrella.cpp.i
+.PHONY : funcionesAestrella.cpp.i
+
+funcionesAestrella.s: funcionesAestrella.cpp.s
+.PHONY : funcionesAestrella.s
+
+# target to generate assembly for a file
+funcionesAestrella.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/practica4.dir/build.make CMakeFiles/practica4.dir/funcionesAestrella.cpp.s
+.PHONY : funcionesAestrella.cpp.s
+
 funcionesDinamica.o: funcionesDinamica.cpp.o
 .PHONY : funcionesDinamica.o
 
@@ -282,6 +306,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... practica4"
+	@echo "... funcionesAestrella.o"
+	@echo "... funcionesAestrella.i"
+	@echo "... funcionesAestrella.s"
 	@echo "... funcionesDinamica.o"
 	@echo "... funcionesDinamica.i"
 	@echo "... funcionesDinamica.s"

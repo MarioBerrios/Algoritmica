@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/practica4.dir/funcionesAestrella.cpp.o"
+  "CMakeFiles/practica4.dir/funcionesAestrella.cpp.o.d"
   "CMakeFiles/practica4.dir/funcionesDinamica.cpp.o"
   "CMakeFiles/practica4.dir/funcionesDinamica.cpp.o.d"
   "CMakeFiles/practica4.dir/funcionesMedioNivel.cpp.o"

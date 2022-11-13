@@ -27,7 +27,7 @@ void metodoDinamica(){
 
     iniciarMatriz(serie, errores);
     calcularErrores(serie, errores, father, puntos);
-    calcularSegmentacion(serie, father, puntos);
+    guardarSegmentacion(serie, father, puntos);
 
     long double errorMax;
     long double ise;
@@ -67,7 +67,30 @@ void metodoAestrella(){
     SerieTemporal serie(nombreFichero);
 
     //TODO
+    std::vector<Nodo> la;
+    std::vector<Nodo> lc;
+
+    algoritmoAestrella(serie, la, lc, puntos, poda);
+    /*
+    for (Nodo nodo: lc){
+        std::cout << "---------------------------------------------" << std::endl;
+        std::cout << "nodo encontrado " << nodo.punto << " | error: " << nodo.error
+             << " | rango: " << nodo.rango << " | padre: " << nodo.padre << std::endl;
+        std::cout << "---------------------------------------------" << std::endl;       
+    }
     
+    for (Nodo nodo: la)    
+        if (nodo.punto == 5 && nodo.rango == 1)
+            std::cout << "nodo encontrado " << nodo.punto << " | error: " << nodo.error
+                << " | rango: " << nodo.rango << " | padre: " << nodo.padre << std::endl;
+    */
+    crearSegmentacion(serie, lc, puntos);
+    /*
+    std::cout << serie.calcularIseEntreDosPuntos(0, 5) << std::endl;
+    std::cout << serie.calcularIseEntreDosPuntos(5, 9) << std::endl;
+    std::cout << serie.calcularIseEntreDosPuntos(9, 10) << std::endl;
+    std::cout << serie.calcularIseEntreDosPuntos(10, 49) << std::endl;
+    */
     long double errorMax;
     long double ise;
     int posicion;

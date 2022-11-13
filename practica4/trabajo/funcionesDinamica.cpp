@@ -25,7 +25,7 @@ std::vector< std::vector<long int> > &father, int puntos){
     }
 }
 
-void calcularSegmentacion(SerieTemporal &serie, std::vector< std::vector<long int> > &father,
+void guardarSegmentacion(SerieTemporal &serie, std::vector< std::vector<long int> > &father,
 int puntos){
     long int puntoDominante = serie.numeroPuntosSerieTemporal() - 1;
     serie.dominantePunto(puntoDominante, true);

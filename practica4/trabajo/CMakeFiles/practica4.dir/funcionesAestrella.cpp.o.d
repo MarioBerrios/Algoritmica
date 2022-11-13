@@ -1,5 +1,5 @@
-CMakeFiles/practica4.dir/funcionesMedioNivel.cpp.o: \
- /home/mberrios/Universidad/Estudio/Curso\ 2022-23/3º\ curso/Algoritmica/practicas/practica4/trabajo/funcionesMedioNivel.cpp \
+CMakeFiles/practica4.dir/funcionesAestrella.cpp.o: \
+ /home/mberrios/Universidad/Estudio/Curso\ 2022-23/3º\ curso/Algoritmica/practicas/practica4/trabajo/funcionesAestrella.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/vector \
  /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -152,7 +152,7 @@ CMakeFiles/practica4.dir/funcionesMedioNivel.cpp.o: \
  /usr/include/c++/11/bits/locale_facets.tcc \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
- /usr/include/c++/11/bits/istream.tcc \
+ /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/limits \
  /home/mberrios/Universidad/Estudio/Curso\ 2022-23/3º\ curso/Algoritmica/practicas/practica4/trabajo/serietemporal.hpp \
  /usr/include/c++/11/algorithm /usr/include/c++/11/utility \
  /usr/include/c++/11/bits/stl_relops.h \
@@ -172,6 +172,4 @@ CMakeFiles/practica4.dir/funcionesMedioNivel.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /home/mberrios/Universidad/Estudio/Curso\ 2022-23/3º\ curso/Algoritmica/practicas/practica4/trabajo/funcionesMedioNivel.hpp \
- /home/mberrios/Universidad/Estudio/Curso\ 2022-23/3º\ curso/Algoritmica/practicas/practica4/trabajo/funcionesDinamica.hpp \
  /home/mberrios/Universidad/Estudio/Curso\ 2022-23/3º\ curso/Algoritmica/practicas/practica4/trabajo/funcionesAestrella.hpp

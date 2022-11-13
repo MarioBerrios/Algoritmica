@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/mberrios/Universidad/Estudio/Curso 2022-23/3º curso/Algoritmica/practicas/practica4/trabajo/funcionesAestrella.cpp" "CMakeFiles/practica4.dir/funcionesAestrella.cpp.o" "gcc" "CMakeFiles/practica4.dir/funcionesAestrella.cpp.o.d"
   "/home/mberrios/Universidad/Estudio/Curso 2022-23/3º curso/Algoritmica/practicas/practica4/trabajo/funcionesDinamica.cpp" "CMakeFiles/practica4.dir/funcionesDinamica.cpp.o" "gcc" "CMakeFiles/practica4.dir/funcionesDinamica.cpp.o.d"
   "/home/mberrios/Universidad/Estudio/Curso 2022-23/3º curso/Algoritmica/practicas/practica4/trabajo/funcionesMedioNivel.cpp" "CMakeFiles/practica4.dir/funcionesMedioNivel.cpp.o" "gcc" "CMakeFiles/practica4.dir/funcionesMedioNivel.cpp.o.d"
   "/home/mberrios/Universidad/Estudio/Curso 2022-23/3º curso/Algoritmica/practicas/practica4/trabajo/main.cpp" "CMakeFiles/practica4.dir/main.cpp.o" "gcc" "CMakeFiles/practica4.dir/main.cpp.o.d"
