@@ -49,6 +49,7 @@ CMakeFiles/practica4.dir/funcionesAestrella.cpp.o: funcionesAestrella.cpp \
   /usr/include/c++/11/bits/hash_bytes.h \
   /usr/include/c++/11/bits/range_access.h \
   /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/c++/11/limits \
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/ios \
@@ -189,7 +190,6 @@ CMakeFiles/practica4.dir/funcionesAestrella.cpp.o: funcionesAestrella.cpp \
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
-  /usr/include/c++/11/limits \
   serietemporal.hpp \
   /usr/include/c++/11/algorithm \
   /usr/include/c++/11/utility \
@@ -541,7 +541,16 @@ CMakeFiles/practica4.dir/funcionesMedioNivel.cpp.o: funcionesMedioNivel.cpp \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
   funcionesMedioNivel.hpp \
   funcionesDinamica.hpp \
-  funcionesAestrella.hpp
+  funcionesAestrella.hpp \
+  ClaseTiempo.hpp \
+  /usr/include/c++/11/cassert \
+  /usr/include/assert.h \
+  /usr/include/c++/11/ctime \
+  /usr/include/c++/11/cstring \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
+  /usr/include/x86_64-linux-gnu/bits/string_fortified.h
 
 CMakeFiles/practica4.dir/main.cpp.o: main.cpp \
   /usr/include/stdc-predef.h \
@@ -1098,8 +1107,6 @@ CMakeFiles/practica4.dir/serietemporal.cpp.o: serietemporal.cpp \
   recta.hpp
 
 
-/usr/include/c++/11/cstring:
-
 /usr/include/c++/11/bits/fstream.tcc:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
@@ -1109,6 +1116,8 @@ CMakeFiles/practica4.dir/serietemporal.cpp.o: serietemporal.cpp \
 serietemporal.cpp:
 
 punto.cpp:
+
+/usr/include/c++/11/cstring:
 
 funcionesMedioNivel.hpp:
 
@@ -1138,9 +1147,9 @@ punto.hpp:
 
 /usr/include/c++/11/bits/stl_relops.h:
 
-serietemporal.hpp:
+ClaseTiempo.hpp:
 
-/usr/include/c++/11/limits:
+serietemporal.hpp:
 
 /usr/include/c++/11/bits/istream.tcc:
 
@@ -1228,7 +1237,9 @@ serietemporal.hpp:
 
 /usr/include/c++/11/bits/ostream_insert.h:
 
-/usr/include/c++/11/vector:
+/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+
+/usr/include/c++/11/string:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
@@ -1236,11 +1247,15 @@ serietemporal.hpp:
 
 /usr/include/c++/11/bits/codecvt.h:
 
+/usr/include/c++/11/ctime:
+
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
 /usr/include/c++/11/ostream:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
+
+/usr/include/c++/11/limits:
 
 /usr/include/c++/11/bits/range_access.h:
 
@@ -1374,6 +1389,8 @@ funcionesDinamica.hpp:
 
 /usr/include/c++/11/clocale:
 
+/usr/include/c++/11/vector:
+
 /usr/include/c++/11/bits/basic_string.tcc:
 
 funcionesAestrella.cpp:
@@ -1415,10 +1432,6 @@ funcionesDinamica.cpp:
 /usr/include/stdint.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
-
-/usr/include/c++/11/string:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
 

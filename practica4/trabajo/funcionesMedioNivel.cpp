@@ -4,6 +4,7 @@
 #include "funcionesMedioNivel.hpp"
 #include "funcionesDinamica.hpp"
 #include "funcionesAestrella.hpp"
+#include "ClaseTiempo.hpp"
 
 void metodoDinamica(){
 
@@ -17,6 +18,7 @@ void metodoDinamica(){
     std::cin >> puntos;
 
     SerieTemporal serie(nombreFichero);
+    Clock time;
 
     std::vector< std::vector<long int> > father =
         std::vector< std::vector<long int> > (serie.numeroPuntosSerieTemporal(), 
@@ -26,7 +28,9 @@ void metodoDinamica(){
         std::vector<long double> (puntos));
 
     iniciarMatriz(serie, errores);
+    time.start();
     calcularErrores(serie, errores, father, puntos);
+    time.stop();
     guardarSegmentacion(serie, father, puntos);
 
     long double errorMax;
@@ -40,6 +44,7 @@ void metodoDinamica(){
     std::cout << "ISE = " << ise << std::endl;
     std::cout << "Error máximo = " << errorMax << std::endl;
     std::cout << "Punto de error máximo: " << posicion << std::endl;
+    std::cout << "Tiempo tardado: " << time.elapsed()/1000000.0 << "s" << std::endl;
     std::cout << "-----------------------------------------" << std::endl;
     std::cout << std::endl;
 
@@ -67,30 +72,15 @@ void metodoAestrella(){
     SerieTemporal serie(nombreFichero);
 
     //TODO
+    Clock time;
     std::vector<Nodo> la;
     std::vector<Nodo> lc;
-
-    algoritmoAestrella(serie, la, lc, puntos, poda);
-    /*
-    for (Nodo nodo: lc){
-        std::cout << "---------------------------------------------" << std::endl;
-        std::cout << "nodo encontrado " << nodo.punto << " | error: " << nodo.error
-             << " | rango: " << nodo.rango << " | padre: " << nodo.padre << std::endl;
-        std::cout << "---------------------------------------------" << std::endl;       
-    }
     
-    for (Nodo nodo: la)    
-        if (nodo.punto == 5 && nodo.rango == 1)
-            std::cout << "nodo encontrado " << nodo.punto << " | error: " << nodo.error
-                << " | rango: " << nodo.rango << " | padre: " << nodo.padre << std::endl;
-    */
+    time.start();
+    algoritmoAestrella(serie, la, lc, puntos, poda);
+    time.stop();
     crearSegmentacion(serie, lc, puntos);
-    /*
-    std::cout << serie.calcularIseEntreDosPuntos(0, 5) << std::endl;
-    std::cout << serie.calcularIseEntreDosPuntos(5, 9) << std::endl;
-    std::cout << serie.calcularIseEntreDosPuntos(9, 10) << std::endl;
-    std::cout << serie.calcularIseEntreDosPuntos(10, 49) << std::endl;
-    */
+
     long double errorMax;
     long double ise;
     int posicion;
@@ -102,6 +92,7 @@ void metodoAestrella(){
     std::cout << "ISE = " << ise << std::endl;
     std::cout << "Error máximo = " << errorMax << std::endl;
     std::cout << "Punto de error máximo: " << posicion << std::endl;
+    std::cout << "Tiempo tardado: " << time.elapsed()/1000000.0 << "s" << std::endl;
     std::cout << "-----------------------------------------" << std::endl;
     std::cout << std::endl;
 

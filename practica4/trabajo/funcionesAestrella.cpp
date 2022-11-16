@@ -1,6 +1,4 @@
 #include <vector>
-//TODO QUITAR ESTO NO SE TE OLVIDE COMO LA OTRA VEZ
-#include <iostream>
 #include <limits>
 #include "serietemporal.hpp"
 #include "funcionesAestrella.hpp"
@@ -9,20 +7,21 @@ Nodo iniciarNodo(int punto, long double error, int rango, int padre);
 Nodo minimoNodo(const std::vector<Nodo> &la);
 void borrarNodo(Nodo &nodo, std::vector<Nodo> &lista);
 void rellenarListaAbierta(SerieTemporal &serie, const Nodo &nodo_padre, std::vector<Nodo> &la, 
-    const int puntos, const long double poda);
-Nodo buscarNodo(const int punto, const int rango, std::vector<Nodo> &lc);
+    std::vector<Nodo> &lc, const int puntos, const long double poda);
+Nodo buscarNodo(const int punto, const int rango, std::vector<Nodo> &lista);
+bool contieneNodo(Nodo &nodo, std::vector<Nodo> &lista);
 
 void algoritmoAestrella(SerieTemporal &serie, std::vector<Nodo> &la, 
 std::vector<Nodo> &lc, const int puntos, const long double poda){
     Nodo nodo_minimo = iniciarNodo(0, 0, 0, -1);
-    lc.push_back(nodo_minimo);
 
     while (nodo_minimo.punto != serie.numeroPuntosSerieTemporal()-1){
-        rellenarListaAbierta(serie, nodo_minimo, la, puntos, poda);
+        lc.push_back(nodo_minimo);
+        rellenarListaAbierta(serie, nodo_minimo, la, lc, puntos, poda);
         nodo_minimo = minimoNodo(la);
         borrarNodo(nodo_minimo, la);
-        lc.push_back(nodo_minimo);
     }
+    lc.push_back(nodo_minimo);
 }
 
 void crearSegmentacion(SerieTemporal &serie, std::vector<Nodo> &lc, const int puntos){
@@ -65,7 +64,7 @@ void borrarNodo(Nodo &nodo, std::vector<Nodo> &lista){
 }
 
 void rellenarListaAbierta(SerieTemporal &serie, const Nodo &nodo_padre, std::vector<Nodo> &la, 
-const int puntos, const long double poda){
+std::vector<Nodo> &lc, const int puntos, const long double poda){
     int rango = nodo_padre.rango + 1;
     for(int i = nodo_padre.punto + 1; i < serie.numeroPuntosSerieTemporal(); i++){
         if (i > (serie.numeroPuntosSerieTemporal() - puntos + rango))
@@ -87,21 +86,31 @@ const int puntos, const long double poda){
                 }
                 if(incluir){
                     Nodo nodo_hijo = iniciarNodo(i, error, rango, nodo_padre.punto);
-                    la.push_back(nodo_hijo);
+                    if(!contieneNodo(nodo_hijo, lc))
+                        la.push_back(nodo_hijo);
                 }
             }
         }
     }
 }
 
-Nodo buscarNodo(const int punto, const int rango, std::vector<Nodo> &lc){
+Nodo buscarNodo(const int punto, const int rango, std::vector<Nodo> &lista){
     long double error = numeric_limits<long double>::infinity();
     Nodo nodo;
-    for (Nodo item: lc){
+    for (Nodo &item: lista){
         if (item.punto == punto && item.rango == rango && item.error < error){
             error = item.error;
             nodo = item;
         }
     }
     return nodo;
+}
+
+bool contieneNodo(Nodo &nodo, std::vector<Nodo> &lista){
+    for (Nodo &item: lista){
+        if (item.punto == nodo.punto && item.rango == nodo.rango){
+            return true;
+        }
+    }
+    return false;
 }

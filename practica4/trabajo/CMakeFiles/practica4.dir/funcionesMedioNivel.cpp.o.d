@@ -174,4 +174,10 @@ CMakeFiles/practica4.dir/funcionesMedioNivel.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
  /home/mberrios/Universidad/Estudio/Curso\ 2022-23/3º\ curso/Algoritmica/practicas/practica4/trabajo/funcionesMedioNivel.hpp \
  /home/mberrios/Universidad/Estudio/Curso\ 2022-23/3º\ curso/Algoritmica/practicas/practica4/trabajo/funcionesDinamica.hpp \
- /home/mberrios/Universidad/Estudio/Curso\ 2022-23/3º\ curso/Algoritmica/practicas/practica4/trabajo/funcionesAestrella.hpp
+ /home/mberrios/Universidad/Estudio/Curso\ 2022-23/3º\ curso/Algoritmica/practicas/practica4/trabajo/funcionesAestrella.hpp \
+ /home/mberrios/Universidad/Estudio/Curso\ 2022-23/3º\ curso/Algoritmica/practicas/practica4/trabajo/ClaseTiempo.hpp \
+ /usr/include/c++/11/cassert /usr/include/assert.h \
+ /usr/include/c++/11/ctime /usr/include/c++/11/cstring \
+ /usr/include/string.h /usr/include/strings.h \
+ /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
+ /usr/include/x86_64-linux-gnu/bits/string_fortified.h

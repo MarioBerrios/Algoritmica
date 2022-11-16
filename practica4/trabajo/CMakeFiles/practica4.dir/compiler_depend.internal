@@ -50,6 +50,7 @@ CMakeFiles/practica4.dir/funcionesAestrella.cpp.o
  /usr/include/c++/11/bits/hash_bytes.h
  /usr/include/c++/11/bits/range_access.h
  /usr/include/c++/11/bits/vector.tcc
+ /usr/include/c++/11/limits
  /usr/include/c++/11/iostream
  /usr/include/c++/11/ostream
  /usr/include/c++/11/ios
@@ -190,7 +191,6 @@ CMakeFiles/practica4.dir/funcionesAestrella.cpp.o
  /usr/include/c++/11/bits/ostream.tcc
  /usr/include/c++/11/istream
  /usr/include/c++/11/bits/istream.tcc
- /usr/include/c++/11/limits
  /home/mberrios/Universidad/Estudio/Curso 2022-23/3º curso/Algoritmica/practicas/practica4/trabajo/serietemporal.hpp
  /usr/include/c++/11/algorithm
  /usr/include/c++/11/utility
@@ -545,6 +545,15 @@ CMakeFiles/practica4.dir/funcionesMedioNivel.cpp.o
  /home/mberrios/Universidad/Estudio/Curso 2022-23/3º curso/Algoritmica/practicas/practica4/trabajo/funcionesMedioNivel.hpp
  /home/mberrios/Universidad/Estudio/Curso 2022-23/3º curso/Algoritmica/practicas/practica4/trabajo/funcionesDinamica.hpp
  /home/mberrios/Universidad/Estudio/Curso 2022-23/3º curso/Algoritmica/practicas/practica4/trabajo/funcionesAestrella.hpp
+ /home/mberrios/Universidad/Estudio/Curso 2022-23/3º curso/Algoritmica/practicas/practica4/trabajo/ClaseTiempo.hpp
+ /usr/include/c++/11/cassert
+ /usr/include/assert.h
+ /usr/include/c++/11/ctime
+ /usr/include/c++/11/cstring
+ /usr/include/string.h
+ /usr/include/strings.h
+ /usr/include/x86_64-linux-gnu/bits/strings_fortified.h
+ /usr/include/x86_64-linux-gnu/bits/string_fortified.h
 
 CMakeFiles/practica4.dir/main.cpp.o
  /home/mberrios/Universidad/Estudio/Curso 2022-23/3º curso/Algoritmica/practicas/practica4/trabajo/main.cpp
