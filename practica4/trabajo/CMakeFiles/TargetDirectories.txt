@@ -1,3 +1,0 @@
-/home/mberrios/Universidad/Estudio/Curso 2022-23/3º curso/Algoritmica/practicas/practica4/trabajo/CMakeFiles/practica4.dir
-/home/mberrios/Universidad/Estudio/Curso 2022-23/3º curso/Algoritmica/practicas/practica4/trabajo/CMakeFiles/edit_cache.dir
-/home/mberrios/Universidad/Estudio/Curso 2022-23/3º curso/Algoritmica/practicas/practica4/trabajo/CMakeFiles/rebuild_cache.dir
